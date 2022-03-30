@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;700&family=Barlow:wght@600&family=Fraunces:ital,wght@0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;700&family=Barlow:wght@400;600&family=Fraunces:ital,wght@0,900;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow';
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 0px 40px;
+    margin-bottom: 50px;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+.logo {
+    height: 5vh;
+}
+
+.nav-toggle {
+    background: transparent;
+    border: none;
+}
+
+.nav-toggle:hover {
+    cursor: pointer;
+}
+
+.nav-toggle-active {
+    display: none;
+}
+
+.links {
+    /* visibility: hidden; */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    transform: translateY(-10px);
+    height: 60vh;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    width: 70%;
+    list-style: none;
+    position: absolute;
+    left: 80px;
+    top: 70px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 1)
+}
+
+.show-links {
+    /* visibility: visible; */
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    transform: translateY(20px);
+}
+
+.links a {
+    text-decoration: none;
+    color: hsl(230, 29%, 20%);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 22px;
+    transition: 0.2s all ease;
+}
+
+.links a:hover {
+    color: hsl(231, 7%, 65%);
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+.pricing-border {
+    height: 5vh;
+    border-bottom: 1px solid hsl(231, 7%, 65%);
+}
+
+.links li {
+    margin: 45px;
+}
+
+.image-container {
+    height: 60vh;
+    background: url(./images/illustration-devices.svg) no-repeat;
+    background-size: cover;
+    background-position: left;
+    margin-bottom: 100px;
+}
+
+.main-container {
+    height: 70vh;
+    font-size: 16px;
+}
+
+.main-header {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.main-header span {
+    margin-right: 20px;
+    border: 1px solid;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: hsl(230, 29%, 20%);
+    color: white;
+    letter-spacing: normal;
+    font-weight: 700;
+}
+
+.main-header p {
+    letter-spacing: 0.4rem;
+    color: hsl(231, 7%, 65%);
+
+}
+
+.main-content {
+    padding: 0px 40px;
+}
+
+.powerful {
+    text-transform: uppercase;
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: hsl(230, 29%, 20%);
+    font-weight: 700;
+}
+
+.project {
+    font-size: 27px;
+    color: hsl(230, 11%, 40%);
+    margin-bottom: 40px;
+}
+
+.main-schedule {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.schedule {
+    padding: 15px 30px;
+    background-color: hsl(0, 100%, 68%);
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.2s all ease-in-out;
+}
+
+.schedule:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s all ease-in-out;
+}
+
+.preview {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: hsl(231, 7%, 65%);
+}
+
+.preview:hover {
+    cursor: pointer;
+}
+
+
+@media  screen and (min-width:1000px) {
+    .nav-center {
+        display: flex;
+        justify-content: space-between;
+        height: 20vh;
+        margin-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .nav-header {
+        margin: 0;
+    }
+    
+    .nav-toggle {
+        display: none;
+    }
+
+    .links {
+        opacity: 1;
+        position:sticky ;
+        display: flex;
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .links a {
+        font-size: 16px;
+    }
+
+    .links li {
+        margin: 45px 20px;
+    }
+
+    .pricing-border {
+        border: none;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        max-height: 1300px;
+    }
+
+    .image-container {
+        flex: 1;
+    }
+
+    .main-container {
+        flex: 1;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .main-header {
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    .powerful {
+        font-size: 50px;
+    }
+
+    .project {
+        font-size: 32px;
+    }
+
+    .main-schedule {
+        display: flex;
+        justify-content: start;
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+
+    .schedule {
+        margin-right: 20px;
+    }
+
+    .preview {
+        font-size: 12px;
+        letter-spacing: 0.3rem;
+    }
+}

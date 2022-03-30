@@ -1,0 +1,585 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,900;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,wght@0,900;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.orange {
+  height: 100vh;
+  max-height: 1300px;
+  width: 100%;
+  background: url(./images/mobile/image-header.jpg) no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.nav-content {
+  text-align: center;
+  font-size: 3.5rem;
+  color: white;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-family: "Fraunces";
+}
+
+.nav-content p {
+  margin-bottom: 50px;
+}
+
+.nav-toggle {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 22px;
+}
+
+.nav-toggle:hover {
+  cursor: pointer;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+  background: white;
+  position: absolute;
+  top: 100px;
+  left: 25px;
+  border-radius: 4px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  /* visibility: hidden; */
+}
+
+.show-links {
+  /* visibility: visible; */
+  opacity: 1;
+  transform: translateY(20px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.links li {
+  margin: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Barlow";
+}
+
+.links a {
+  text-decoration: none;
+  color: hsl(232, 10%, 55%);
+  transition: 150ms all ease-in-out;
+}
+
+.links a:hover {
+  cursor: pointer;
+  border-radius: 40px;
+  padding: 15px 30px;
+  background: hsl(51, 100%, 49%);
+  text-transform: uppercase;
+  font-family: "Fraunces";
+  font-weight: 700;
+  color: black;
+  transition: 150ms all ease-in-out;
+}
+
+.egg {
+  background: url(./images/mobile/image-transform.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+.transform,
+.stand-out {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+}
+
+.transform h2,
+.stand-out h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Fraunces";
+  /* margin-bottom: 20px; */
+}
+
+.transform p {
+  font-size: 1.4rem;
+  font-family: "Barlow";
+  color: hsl(232, 10%, 55%);
+  line-height: 2rem;
+  margin: 30px;
+}
+
+.transform .learn {
+  text-transform: uppercase;
+  font-family: "Fraunces";
+  color: black;
+  border-bottom: 4px solid hsl(51, 100%, 49%);
+}
+
+.transform .learn:hover {
+  cursor: pointer;
+}
+
+.glass {
+  height: 80vh;
+  background: url(./images/mobile/image-stand-out.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.stand-out p {
+  font-size: 1.5rem;
+  font-family: "Barlow";
+  color: hsl(232, 10%, 55%);
+  line-height: 2rem;
+  margin: 30px;
+}
+
+.stand-out .learn {
+  text-transform: uppercase;
+  font-family: "Fraunces";
+  color: black;
+  border-bottom: 4px solid hsl(7, 99%, 70%);
+}
+
+.stand-out .learn:hover {
+  cursor: pointer;
+}
+
+.strawberry {
+  background: url(./images/mobile/image-graphic-design.jpg) no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  color: hsl(167, 40%, 24%);
+}
+
+.strawberry h2 {
+  font-family: "Fraunces";
+  text-transform: capitalize;
+  font-size: 2rem;
+  padding-bottom: 30px;
+}
+
+.strawberry p {
+  font-family: "Barlow";
+  font-size: 1.3rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+
+.whole-orange {
+  background: url(./images/mobile/image-photography.jpg);
+  background-size: cover;
+  background-position: center top;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  color: hsl(198, 62%, 26%);
+}
+
+.whole-orange h2 {
+  font-size: 2rem;
+  padding-bottom: 20px;
+  font-family: "Fraunces";
+}
+
+.whole-orange p {
+  font-size: 1.2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  font-family: "Barlow";
+}
+
+.client {
+  height: 190vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.client-center {
+  margin: 50px;
+}
+
+.client-center h2 {
+  font-size: 1.3rem;
+  font-family: "Fraunces";
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(210, 4%, 67%);
+}
+
+.emily,
+.thomas,
+.jennie {
+  margin-bottom: 50px;
+}
+
+.emily-img,
+.thomas-img,
+.jennie-img {
+  margin-bottom: 20px;
+}
+
+.client .info {
+  font-family: "Barlow";
+  color: hsl(213, 9%, 39%);
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 20px;
+}
+
+.client .title {
+  font-family: "Fraunces";
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.client .title p {
+  margin-bottom: 10px;
+  color: hsl(212, 27%, 19%);
+}
+
+.client .title span {
+  font-family: "Barlow";
+  font-size: 1rem;
+  color: hsl(210, 4%, 67%);
+}
+
+.emily-img img,
+.thomas-img img,
+.jennie-img img {
+  height: 12vh;
+  border-radius: 50%;
+}
+
+.grid-section {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid1 {
+  background: url(./images/mobile/image-gallery-milkbottles.jpg) no-repeat;
+  background-size: cover;
+}
+
+.grid2 {
+  background: url(./images/mobile/image-gallery-orange.jpg) no-repeat;
+  background-size: cover;
+}
+
+.grid3 {
+  background: url(./images/mobile/image-gallery-cone.jpg) no-repeat;
+  background-size: cover;
+}
+
+.grid4 {
+  background: url(./images/mobile/image-gallery-sugar-cubes.jpg) no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  background-color: hsl(168, 65%, 67%);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-header {
+  margin: 50px;
+}
+
+.footer-header img {
+  filter: invert(51%) sepia(7%) saturate(2206%) hue-rotate(118deg)
+    brightness(93%) contrast(91%);
+}
+
+.footer-links {
+  margin-bottom: 50px;
+}
+
+.flinks {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.flinks a {
+  margin: 40px;
+  text-decoration: none;
+  font-family: "Barlow";
+  color: hsl(168, 34%, 41%);
+}
+
+.flinks li:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: 0.3s all ease;
+}
+
+.social-media i {
+  margin: 20px;
+  font-size: 24px;
+  color: hsl(168, 34%, 41%);
+  transition: 0.3s all ease;
+}
+
+.social-media i:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: 0.3s all ease;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    /* height: 500vh; */
+    width: 100%;
+  }
+
+  .orange {
+    background: url(./images/desktop/image-header.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .nav-header {
+    margin-bottom: 100px;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .links {
+    visibility: hidden;
+  }
+
+  .links li {
+    font-size: 16px;
+    margin: 25px;
+  }
+
+  .links a {
+    color: #fff;
+    transition: 0.7s all ease-out;
+  }
+
+  .links a:hover {
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 10px 20px;
+    background: #fff;
+    text-transform: uppercase;
+    font-family: "Fraunces";
+    font-weight: 600;
+    color: black;
+    transition: 0.7s all ease-out;
+    font-size: 14px;
+  }
+
+  .desktop-grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "transform egg"
+      "glass standout"
+      "graphic photography";
+    align-items: stretch;
+  }
+
+  .egg {
+    height: 80vh;
+    background: url(./images/desktop/image-transform.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: egg;
+  }
+
+  .transform {
+    height: 80vh;
+    grid-area: transform;
+    padding: 50px;
+    text-align: left;
+    position: relative;
+  }
+
+  .transform h2 {
+    padding-left: 20px;
+    font-size: 2.8rem;
+  }
+
+  .transform .learn {
+    position: absolute;
+    top: 360px;
+    left: 50px;
+  }
+
+  .glass {
+    background: url(./images/desktop/image-stand-out.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    grid-area: glass;
+  }
+
+  .stand-out {
+    height: 80vh;
+    grid-area: standout;
+    padding: 50px;
+    text-align: left;
+    position: relative;
+  }
+
+  .stand-out h2 {
+    padding-left: 20px;
+    font-size: 2.8rem;
+  }
+
+  .stand-out .learn {
+    position: absolute;
+    top: 360px;
+    left: 50px;
+  }
+
+  .strawberry {
+    background: url(./images/desktop/image-graphic-design.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    padding: 0px 30px;
+  }
+
+  .strawberry h2 {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+
+  .strawberry p {
+    font-size: 24px;
+    line-height: 2rem;
+  }
+
+  .whole-orange {
+    background: url(./images/desktop/image-photography.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    padding: 0px 30px;
+  }
+
+  .whole-orange h2 {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+
+  .whole-orange p {
+    font-size: 24px;
+    line-height: 2rem;
+  }
+
+  .client {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .client-center {
+    margin: 100px;
+  }
+
+  .client-container {
+    display: flex;
+    padding: 0px 50px;
+  }
+
+  .emily,
+  .thomas,
+  .jennie {
+    width: 100%;
+  }
+
+  .emily .info,
+  .thomas .info,
+  .jennie .info {
+    font-size: 16px;
+  }
+
+  .emily .title,
+  .thomas .title,
+  .jennie .title {
+    font-size: 16px;
+  }
+
+  .grid-section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 70vh;
+  }
+
+  .grid1 {
+    background: url(./images/desktop/image-gallery-milkbottles.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .grid2 {
+    background: url(./images/desktop/image-gallery-orange.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .grid3 {
+    background: url(./images/desktop/image-gallery-cone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .grid4 {
+    background: url(./images/desktop/image-gallery-sugarcubes.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
